@@ -1,0 +1,22 @@
+[experiment name]
+exp_name = starseg
+
+[data file name]
+data_file_name = stgd_data.hdf5
+
+[input folder name]
+input_dir = input
+
+[result folder name]
+result_dir = results
+
+[training settings]
+train_set_mean = 112.75208
+train_set_std = 50.682297
+
+num_epochs = 300
+learning_rate_initial = 0.001
+learning_rate_tune = 0.0001
+batch_size = 16
+random_state = 23
+cross_validation = Yes
