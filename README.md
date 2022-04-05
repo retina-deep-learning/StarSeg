@@ -16,8 +16,12 @@ https://github.com/retina-deep-learning/StarSeg/releases/download/v1.0.0/starseg
 
 The code used for training and cross-validation can be viewed in 'run_train.py', 'lib/cnn_train.py', and 'lib/helper_functions.py'. Due to HIPAA regulations, the training data set is not publicly available. However, model weights may be re-trained or fine-tuned with other data sets.
 
-The code used for prediction can be used to generate automated segmentations for images. Rename and format an Optos autofluorescence image to 'image.png' and replace the blank 'image.png' in 'input'. Execute the code using 'run_predict.py'. 
+The code used for prediction can be used to generate automated segmentations for images. Rename and format an Optos autofluorescence image to 'image.png' and replace the blank 'image.png' in 'input'. Execute the code using 'run_predict.py'. A 'results' folder will be generate with the following contents:
 
+1. A copy of the original image file
+2. A copy of the preprocessed macular image shown to the algorithm
+3. The algorithm's automated macular segmentation
+4. A text file containing the total segmented DDAF, QDAF, and OAAF areas
 
 
 Acknowledgments
